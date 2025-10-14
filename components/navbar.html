@@ -1,0 +1,68 @@
+<nav data-id="main-navbar" class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo and Brand -->
+      <div data-id="navbar-brand" class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
+          <i data-lucide="shield-check" class="w-6 h-6 text-white"></i>
+        </div>
+        <div>
+          <div class="text-lg font-bold text-gray-900">PM-AJAY</div>
+          <div class="text-xs text-gray-500">Coordination Platform</div>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div data-id="desktop-nav" class="hidden md:flex items-center space-x-8">
+        <a href="index.html" data-id="nav-home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+        <div class="relative group">
+          <button data-id="nav-portals" class="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors">
+            Portals
+            <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <div class="p-2">
+              <a href="login-central.html" data-id="nav-central" class="flex items-center p-3 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">
+                <i data-lucide="building-2" class="w-4 h-4 mr-3"></i>
+                Central Ministry
+              </a>
+              <a href="login-state.html" data-id="nav-state" class="flex items-center p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+                <i data-lucide="map-pin" class="w-4 h-4 mr-3"></i>
+                State Government
+              </a>
+              <a href="login-agency.html" data-id="nav-agency" class="flex items-center p-3 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-colors">
+                <i data-lucide="users" class="w-4 h-4 mr-3"></i>
+                Executing Agency
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button data-id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div data-id="mobile-menu" class="md:hidden hidden border-t border-gray-200 py-4">
+      <div class="space-y-2">
+        <a href="index.html" data-id="mobile-nav-home" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors">Home</a>
+        <div class="px-4 py-2 text-sm font-semibold text-gray-500 uppercase tracking-wide">Portals</div>
+        <a href="login-central.html" data-id="mobile-nav-central" class="flex items-center px-4 py-2 text-gray-700 hover:bg-red-50 hover:text-red-600 rounded-lg transition-colors">
+          <i data-lucide="building-2" class="w-4 h-4 mr-3"></i>
+          Central Ministry
+        </a>
+        <a href="login-state.html" data-id="mobile-nav-state" class="flex items-center px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-colors">
+          <i data-lucide="map-pin" class="w-4 h-4 mr-3"></i>
+          State Government
+        </a>
+        <a href="login-agency.html" data-id="mobile-nav-agency" class="flex items-center px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg transition-colors">
+          <i data-lucide="users" class="w-4 h-4 mr-3"></i>
+          Executing Agency
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

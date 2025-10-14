@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PM-AJAY | Stakeholder Coordination Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar Container -->
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section data-id="hero-section" class="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-20 px-4">
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+    <div class="relative max-w-7xl mx-auto text-center">
+      <div data-id="hero-badge" class="inline-flex items-center bg-white/10 rounded-full px-4 py-2 text-sm font-medium mb-6">
+        <i data-lucide="shield-check" class="w-4 h-4 mr-2"></i>
+        Government of India Initiative
+      </div>
+      <h1 data-id="hero-title" class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        PM-AJAY Stakeholder
+        <span class="text-orange-400">Coordination Platform</span>
+      </h1>
+      <p data-id="hero-description" class="text-xl md:text-2xl mb-8 text-blue-100 max-w-4xl mx-auto">
+        Streamlining coordination between Central Ministry, State Governments, and Executing Agencies for effective implementation of Adarsh Gram, GIA, and Hostel components.
+      </p>
+      <div data-id="hero-stats" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+          <div class="text-2xl font-bold">3</div>
+          <div class="text-sm text-blue-200">Components</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+          <div class="text-2xl font-bold">36</div>
+          <div class="text-sm text-blue-200">States/UTs</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+          <div class="text-2xl font-bold">100+</div>
+          <div class="text-sm text-blue-200">Agencies</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Options Section -->
+  <section data-id="login-section" class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 data-id="login-title" class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Choose Your Portal
+        </h2>
+        <p data-id="login-subtitle" class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Access role-specific dashboards designed for your stakeholder category
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Central Ministry Card -->
+        <div data-id="central-card" class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-red-600"></div>
+          <div class="p-8">
+            <div data-id="central-icon" class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="building-2" class="w-8 h-8 text-red-600"></i>
+            </div>
+            <h3 data-id="central-title" class="text-2xl font-bold text-gray-900 mb-3">Central Ministry</h3>
+            <p data-id="central-description" class="text-gray-600 mb-6 leading-relaxed">
+              National oversight, fund allocation, policy coordination, and multi-state monitoring dashboard.
+            </p>
+            <ul data-id="central-features" class="space-y-2 mb-8">
+              <li class="flex items-center text-sm text-gray-600">
+                <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+                National Project Oversight
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+                Budget Allocation Management
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+                Multi-State Coordination
+              </li>
+            </ul>
+            <a href="login-central.html" data-id="central-login-btn" class="block w-full bg-red-600 hover:bg-red-700 text-white text-center py-3 px-6 rounded-lg font-semibold transition-colors">
+              Access Central Portal
+            </a>
+          </div>
+        </div>
+
+        <!-- State Government Card -->
+        <div data-id="state-card" class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-blue-600"></div>
+          <div class="p-8">
+            <div data-id="state-icon" class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="map-pin" class="w-8 h-8 text-blue-600"></i>
+            </div>
+            <h3 data-id="state-title" class="text-2xl font-bold text-gray-900 mb-3">State Government</h3>
+            <p data-id="state-description" class="text-gray-600 mb-6 leading-relaxed">
+              State-level implementation, agency coordination, and regional project management tools.
+            </p>
+            <ul data-id="state-features" class="space-y-2 mb-8">
+              <li class="flex items-center text-sm text-gray-600">
+                <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+                State Project Management
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+                Agency Coordination
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+                Regional Monitoring
+              </li>
+            </ul>
+            <a href="login-state.html" data-id="state-login-btn" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 px-6 rounded-lg font-semibold transition-colors">
+              Access State Portal
+            </a>
+          </div>
+        </div>
+
+        <!-- Agency Card -->
+        <div data-id="agency-card" class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-green-600"></div>
+          <div class="p-8">
+            <div data-id="agency-icon" class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i data-lucide="users" class="w-8 h-8 text-green-600"></i>
+            </div>
+            <h3 data-id="agency-title" class="text-2xl font-bold text-gray-900 mb-3">Executing Agency</h3>
+            <p data-id="agency-description" class="text-gray-600 mb-6 leading-relaxed">
+              Ground-level execution, progress reporting, and direct implementation management tools.
+            </p>
+            <ul data-id="agency-features" class="space-y-2 mb-8">
+              <li class="flex items-center text-sm text-gray-600">
+                <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+                Project Execution Tools
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+                Progress Reporting
+              </li>
+              <li class="flex items-center text-sm text-gray-600">
+                <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+                Resource Management
+              </li>
+            </ul>
+            <a href="login-agency.html" data-id="agency-login-btn" class="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-3 px-6 rounded-lg font-semibold transition-colors">
+              Access Agency Portal
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Section -->
+  <section data-id="components-section" class="py-16 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 data-id="components-title" class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          PM-AJAY Components
+        </h2>
+        <p data-id="components-subtitle" class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Three key initiatives for scheduled tribe welfare and development
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Adarsh Gram -->
+        <div data-id="adarsh-gram-card" class="text-center p-8 rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200">
+          <div data-id="adarsh-gram-icon" class="w-16 h-16 bg-orange-500 rounded-xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="home" class="w-8 h-8 text-white"></i>
+          </div>
+          <h3 data-id="adarsh-gram-title" class="text-2xl font-bold text-gray-900 mb-3">Adarsh Gram</h3>
+          <p data-id="adarsh-gram-description" class="text-gray-600 leading-relaxed">
+            Model village development focusing on infrastructure, education, healthcare, and livelihood opportunities for scheduled tribes.
+          </p>
+        </div>
+
+        <!-- GIA -->
+        <div data-id="gia-card" class="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200">
+          <div data-id="gia-icon" class="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="graduation-cap" class="w-8 h-8 text-white"></i>
+          </div>
+          <h3 data-id="gia-title" class="text-2xl font-bold text-gray-900 mb-3">Grant-in-Aid (GIA)</h3>
+          <p data-id="gia-description" class="text-gray-600 leading-relaxed">
+            Financial support for NGOs and voluntary organizations working on scheduled tribe development projects and initiatives.
+          </p>
+        </div>
+
+        <!-- Hostel -->
+        <div data-id="hostel-card" class="text-center p-8 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200">
+          <div data-id="hostel-icon" class="w-16 h-16 bg-purple-500 rounded-xl flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="bed" class="w-8 h-8 text-white"></i>
+          </div>
+          <h3 data-id="hostel-title" class="text-2xl font-bold text-gray-900 mb-3">Hostel Facilities</h3>
+          <p data-id="hostel-description" class="text-gray-600 leading-relaxed">
+            Residential accommodation facilities for scheduled tribe students to support their educational journey and reduce dropout rates.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section data-id="features-section" class="py-16 px-4 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 data-id="features-title" class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Platform Features
+        </h2>
+        <p data-id="features-subtitle" class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Addressing coordination challenges with digital solutions
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div data-id="feature-mapping" class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="map" class="w-6 h-6 text-blue-600"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Centralized Mapping</h3>
+          <p class="text-gray-600 text-sm">Complete repository of implementing and executing agencies</p>
+        </div>
+
+        <div data-id="feature-communication" class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="message-circle" class="w-6 h-6 text-green-600"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Streamlined Communication</h3>
+          <p class="text-gray-600 text-sm">Direct communication channels between all stakeholders</p>
+        </div>
+
+        <div data-id="feature-tracking" class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="activity" class="w-6 h-6 text-purple-600"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Real-time Tracking</h3>
+          <p class="text-gray-600 text-sm">Monitor fund flow and work allocation in real-time</p>
+        </div>
+
+        <div data-id="feature-accountability" class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <i data-lucide="shield-check" class="w-6 h-6 text-orange-600"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Clear Accountability</h3>
+          <p class="text-gray-600 text-sm">Defined roles, timelines, and responsibilities</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Container -->
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <!-- Badge Container -->
+  <div id="badge-container" data-source="components/badge.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load all shared components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    loadComponent('#badge-container');
+    
+    // Initialize icons after components are loaded
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+  </script>
+</body>
+</html>

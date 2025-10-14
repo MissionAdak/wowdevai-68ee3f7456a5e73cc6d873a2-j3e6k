@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agency Login | PM-AJAY Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-green-50 to-green-100 min-h-screen">
+  <!-- Navbar Container -->
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Login Section -->
+  <section data-id="login-section" class="py-16 px-4">
+    <div class="max-w-md mx-auto">
+      <!-- Back Button -->
+      <div data-id="back-nav" class="mb-6">
+        <a href="index.html" class="inline-flex items-center text-green-600 hover:text-green-700 font-medium transition-colors">
+          <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+          Back to Home
+        </a>
+      </div>
+
+      <!-- Login Card -->
+      <div data-id="login-card" class="bg-white rounded-2xl shadow-xl p-8 border border-green-100">
+        <!-- Header -->
+        <div data-id="login-header" class="text-center mb-8">
+          <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="users" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <h1 class="text-2xl font-bold text-gray-900 mb-2">Agency Portal</h1>
+          <p class="text-gray-600">Access project execution and reporting tools</p>
+        </div>
+
+        <!-- Agency Type Selection -->
+        <div data-id="agency-type-selection" class="mb-6">
+          <label for="agency-type" class="block text-sm font-medium text-gray-700 mb-2">Agency Type</label>
+          <select id="agency-type" name="agency-type" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors">
+            <option value="">Select agency type...</option>
+            <option value="ngo">Non-Governmental Organization (NGO)</option>
+            <option value="contractor">Construction Contractor</option>
+            <option value="consultancy">Consultancy Firm</option>
+            <option value="educational">Educational Institution</option>
+            <option value="healthcare">Healthcare Provider</option>
+            <option value="cooperative">Cooperative Society</option>
+            <option value="private">Private Company</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- State/Region Selection -->
+        <div data-id="region-selection" class="mb-6">
+          <label for="region" class="block text-sm font-medium text-gray-700 mb-2">Operating Region</label>
+          <select id="region" name="region" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors">
+            <option value="">Select operating region...</option>
+            <option value="andhra-pradesh">Andhra Pradesh</option>
+            <option value="arunachal-pradesh">Arunachal Pradesh</option>
+            <option value="assam">Assam</option>
+            <option value="bihar">Bihar</option>
+            <option value="chhattisgarh">Chhattisgarh</option>
+            <option value="goa">Goa</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="haryana">Haryana</option>
+            <option value="himachal-pradesh">Himachal Pradesh</option>
+            <option value="jharkhand">Jharkhand</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="kerala">Kerala</option>
+            <option value="madhya-pradesh">Madhya Pradesh</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="manipur">Manipur</option>
+            <option value="meghalaya">Meghalaya</option>
+            <option value="mizoram">Mizoram</option>
+            <option value="nagaland">Nagaland</option>
+            <option value="odisha">Odisha</option>
+            <option value="punjab">Punjab</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="sikkim">Sikkim</option>
+            <option value="tamil-nadu">Tamil Nadu</option>
+            <option value="telangana">Telangana</option>
+            <option value="tripura">Tripura</option>
+            <option value="uttar-pradesh">Uttar Pradesh</option>
+            <option value="uttarakhand">Uttarakhand</option>
+            <option value="west-bengal">West Bengal</option>
+            <option value="multi-state">Multi-State Operations</option>
+          </select>
+        </div>
+
+        <!-- Error Message -->
+        <div data-id="error-message" class="hidden bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg mb-6">
+          <div class="flex items-center">
+            <i data-lucide="alert-circle" class="w-4 h-4 mr-2"></i>
+            <span>Invalid credentials. Please try again.</span>
+          </div>
+        </div>
+
+        <!-- Login Form -->
+        <form data-id="login-form" class="space-y-6">
+          <div data-id="username-field">
+            <label for="username" class="block text-sm font-medium text-gray-700 mb-2">Username</label>
+            <input type="text" id="username" name="username" required
+                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors"
+                   placeholder="Enter your username">
+          </div>
+
+          <div data-id="password-field">
+            <label for="password" class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+            <div class="relative">
+              <input type="password" id="password" name="password" required
+                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors pr-12"
+                     placeholder="Enter your password">
+              <button type="button" data-id="toggle-password" class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600">
+                <i data-lucide="eye" class="w-5 h-5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div data-id="remember-forgot" class="flex items-center justify-between">
+            <label class="flex items-center">
+              <input type="checkbox" class="rounded border-gray-300 text-green-600 focus:ring-green-500">
+              <span class="ml-2 text-sm text-gray-600">Remember me</span>
+            </label>
+            <a href="#" class="text-sm text-green-600 hover:text-green-700">Forgot password?</a>
+          </div>
+
+          <button type="submit" data-id="login-submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+            Access Agency Portal
+          </button>
+        </form>
+
+        <!-- Demo Credentials -->
+        <div data-id="demo-credentials" class="mt-8 p-4 bg-gray-50 rounded-lg border border-gray-200">
+          <h3 class="text-sm font-semibold text-gray-700 mb-2">Demo Credentials:</h3>
+          <p class="text-sm text-gray-600">NGO: <code class="bg-white px-2 py-1 rounded">agency_ngo1</code> / <code class="bg-white px-2 py-1 rounded">agency123</code></p>
+          <p class="text-sm text-gray-600">Contractor: <code class="bg-white px-2 py-1 rounded">agency_contractor1</code> / <code class="bg-white px-2 py-1 rounded">agency123</code></p>
+        </div>
+
+        <!-- Features */
+        <div data-id="portal-features" class="mt-8 pt-6 border-t border-gray-200">
+          <h3 class="text-sm font-semibold text-gray-700 mb-3">Portal Features:</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center text-sm text-gray-600">
+              <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+              Project Execution Dashboard
+            </li>
+            <li class="flex items-center text-sm text-gray-600">
+              <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+              Progress Reporting Tools
+            </li>
+            <li class="flex items-center text-sm text-gray-600">
+              <i data-lucide="check-circle" class="w-4 h-4 text-green-500 mr-2"></i>
+              Resource Management
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Badge Container -->
+  <div id="badge-container" data-source="components/badge.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load components
+    loadComponent('#navbar-container');
+    loadComponent('#badge-container');
+    
+    // Initialize icons
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+
+    // Password toggle functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.querySelector('[data-id="toggle-password"]');
+      const passwordInput = document.getElementById('password');
+      
+      if (toggleBtn && passwordInput) {
+        toggleBtn.addEventListener('click', () => {
+          const type = passwordInput.type === 'password' ? 'text' : 'password';
+          passwordInput.type = type;
+          
+          const icon = toggleBtn.querySelector('i');
+          icon.setAttribute('data-lucide', type === 'password' ? 'eye' : 'eye-off');
+          lucide.createIcons();
+        });
+      }
+
+      // Form submission
+      const form = document.querySelector('[data-id="login-form"]');
+      const errorMessage = document.querySelector('[data-id="error-message"]');
+      const agencyTypeSelect = document.getElementById('agency-type');
+      const regionSelect = document.getElementById('region');
+      
+      if (form) {
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          
+          const formData = new FormData(form);
+          const credentials = {
+            username: formData.get('username'),
+            password: formData.get('password'),
+            agencyType: agencyTypeSelect.value,
+            region: regionSelect.value,
+            portal: 'agency'
+          };
+
+          if (!credentials.agencyType) {
+            alert('Please select your agency type');
+            return;
+          }
+
+          if (!credentials.region) {
+            alert('Please select your operating region');
+            return;
+          }
+
+          try {
+            const response = await fetch('/api/login', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(credentials)
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+              window.location.href = `/dashboard/${result.user.role}`;
+            } else {
+              errorMessage.classList.remove('hidden');
+              setTimeout(() => {
+                errorMessage.classList.add('hidden');
+              }, 5000);
+            }
+          } catch (error) {
+            console.error('Login error:', error);
+            errorMessage.classList.remove('hidden');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
